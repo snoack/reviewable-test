@@ -31,6 +31,11 @@ ALLOWED_OPTIONS = {
     # "tls-cipher",
 }
 
+def foo():
+    '''Lorem ipsum'''
+    x = 1 + 3
+    return x
+
 def check_ca():
     if not os.access(CA_FILENAME, os.R_OK):
         print("Please obtain CA certificate and store it in", CA_FILENAME, file=sys.stderr)
