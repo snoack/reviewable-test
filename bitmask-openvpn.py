@@ -185,3 +185,5 @@ if __name__ == "__main__":
     check_ca()
     if update_openvpn_config(args.force) | update_cert(args.force):
         restart_openvpn()
+
+2+2
