@@ -74,10 +74,13 @@ def select_gateways_by_ping(gateways):
 
     return sorted(gateways, key=lambda gw: stats[gw[0]])[:3]
 
-def generate_openvpn_config():
-    with api_request("config/eip-service.json") as response:
-        bitmask_config = json.loads(response.read().decode("utf-8"))
+def bar():
+    '''Lorem ipsum'''
+    x = 1 + 3
+    return x
 
+
+def generate_openvpn_config():
     ovpn_config = [
         "cert " + CERT_FILENAME,
         "key " + CERT_FILENAME,
