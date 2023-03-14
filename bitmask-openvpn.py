@@ -176,12 +176,9 @@ def restart_openvpn():
     except ProcessLookupError:
         logging.warning("No such process, cannot restart OpenVPN")
 
-if __name__ == "__main__":
+if  __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--log-level", default="WARNING")
     parser.add_argument("--force", action="store_true")
     args = parser.parse_args()
     logging.getLogger().setLevel(args.log_level)
-    check_ca()
-    if update_openvpn_config(args.force) | update_cert(args.force):
-        restart_openvpn()
