@@ -166,7 +166,7 @@ def update_cert(force=False):
     with open(CERT_FILENAME, "wb") as file: file.write(pem)
     return True
 
-def restart_openvpn():
+def restart_openvpn(unused):
     logging.info("Restarting OpenVPN")
     try:
         with open(PID_FILENAME, "r") as file:
@@ -174,7 +174,7 @@ def restart_openvpn():
     except FileNotFoundError:
         logging.info("PID file does not exist, OpenVPN doesn't seem to be running")
     except ProcessLookupError:
-        logging.warning("No such process, cannot restart OpenVPN")
+        logging.warning('No such process, cannot restart OpenVPN')
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
