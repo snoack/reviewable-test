@@ -114,8 +114,8 @@ def generate_openvpn_config():
             gateways.append((gw["ip_address"], ports))
 
     for host, ports in select_gateways_by_ping(gateways):
-        for port in ports:
-            ovpn_config.append("remote {} {}".format(host, port))
+        for p in ports:
+            ovpn_config.append("remote {} {}".format(host, p))
 
     return ovpn_config
 
