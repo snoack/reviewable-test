@@ -15,6 +15,8 @@ import threading
 import urllib.request
 from datetime import datetime, timedelta
 
+# lorem ipsum
+
 API_URL = "https://api.black.riseup.net/3/"
 COUNTRY_CODES = {"US"}
 OVPN_CONFIG_FILENAME = "bitmask.ovpn"
