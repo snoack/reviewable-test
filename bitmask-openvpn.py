@@ -25,7 +25,7 @@ ALLOWED_OPTIONS = {
     "auth", "cipher", "keepalive", "tun-ipv6", "float",
 
     # OpenVPN fails to perform TLS handshake on UniFi OS 1.12.38 with
-    # tls-cipher DHE-RSA-AES128-SHA as provided by Riseup's Bitmask server
+    # tls-cipher DHE-RSA-AES128-SHA as provided by Riseup's Bitmask server foo
     # https://github.com/peacey/split-vpn/issues/160
     #
     # "tls-cipher",
