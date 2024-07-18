@@ -1,5 +1,9 @@
-default-review-style: one-per-commit
-
 badge:
-  location: foo
-  when: bar
+  location: description-bottom
+  when: foo
+overrides:
+  - repositories:
+    - '*'
+    settings:
+      badge:
+        location: {
