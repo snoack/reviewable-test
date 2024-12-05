@@ -1,9 +1,3 @@
 badge:
-  location: description-bottom
-  when: foo
-overrides:
-  - repositories:
-    - '*'
-    settings:
-      badge:
-        location: {
+  location: comment
+  commenter: snoack
