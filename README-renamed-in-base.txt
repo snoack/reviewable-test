@@ -10,5 +10,4 @@ In a efficitur dolor. Suspendisse bibendum dui urna, ac consectetur enim imperdi
 
 renamed in base
 foo
-baxy
-bat
+bax
