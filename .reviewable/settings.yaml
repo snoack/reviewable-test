@@ -1,1 +1,5 @@
 default-review-style: one-per-commit
+coverage:
+  url: http://example.com/
+  headers:
+    authorization: repo=602256052;foo
