@@ -1,5 +1,1 @@
 default-review-style: one-per-commit
-
-badge:
-  location: foo
-  when: bar
