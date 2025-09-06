@@ -1,4 +1,4 @@
 function foo() {
-  const namespace = 'bar';
+  const namespace = 'foo';
   return `${namespace}`;;
 }
