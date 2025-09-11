@@ -1,4 +1,4 @@
-let a = 1 + 2;
-console.warn(a);
+let b = 1 + 2;
+console.warn(b);
 
 
